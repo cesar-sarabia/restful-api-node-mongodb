@@ -1,0 +1,14 @@
+{
+  "name": "restful-api-node-mongodb",
+  "version": "0.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",    
+    "mongoose":"~4.1.2"
+  }
+}
