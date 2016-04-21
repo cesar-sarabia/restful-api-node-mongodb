@@ -7,5 +7,13 @@ var userSchema  = {
     "userEmail" : String,
     "userPassword" : String
 };
+var otrSchema={
+	"nombre":String
+}
 // create model if not exists.
-module.exports = mongoose.model('datos',userSchema);
+var data = mongoose.model('datos',userSchema);
+var otr = mongoose.model('otr',otrSchema)
+module.exports = {
+	datos:data,
+	otro:otr
+}
